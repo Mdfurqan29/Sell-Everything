@@ -1,12 +1,21 @@
 import Home from "../Screens/home/home.jsx"
 import Error from "../ErrorRouter/Error.jsx"
-import Products from "../Screens/Products/Products.jsx"
-import AllProduct from "../Screens/AllProducts/AllProduct.jsx"
-
+import Products from "../Screens/DashBoard/DashBoardScreens/Products.jsx"
+import AllProduct from "../Screens/DashBoard/DashBoardScreens/AllProduct.jsx"
+import DashBoard from "../Screens/DashBoard/DashBoard.jsx"
+import SingUp from "../Screens/DashBoard/DashBoardScreens/SingUp.jsx"
+import SingIn from "../Screens/DashBoard/DashBoardScreens/SingIn.jsx"
+import ChackingUser from "../Screens/ChackingUser/ChackingUser.jsx"
 
 export const RouterList = [{
     path:'/',
-    element:<Home/>
+    element:<ChackingUser/>
+},{
+    path:'/SingUp',
+    element:<SingUp/>
+},{
+    path:'/login',
+    element:<SingIn/>
 },
 {
     path:'/product/:id',
@@ -15,6 +24,10 @@ export const RouterList = [{
 {
     path:'/products',
     element:<AllProduct/>
+},
+{
+    path:'/Dashboard/*',
+    element:<DashBoard/>
 },
 {
     path:'*',

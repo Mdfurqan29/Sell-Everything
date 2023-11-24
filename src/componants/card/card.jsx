@@ -2,7 +2,7 @@ import { Box } from "@mui/material"
 
 const Card = ({lable,onClick}) => {
   return <Box sx={{
-    width: "200px",
+    width: "240px",
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
